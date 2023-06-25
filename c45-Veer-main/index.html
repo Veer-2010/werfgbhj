@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Speed Racer</title>
+  <!-- Lib -->
+  <script src="./lib/p5.min.js"></script>
+  <script src="./lib/p5.dom.min.js"></script>
+  <script src="./lib/p5.sound.min.js"></script>
+  <script src="./lib/p5.play.js"></script>
+
+  <link rel="stylesheet" href="style.css" />
+
+  <script src="./js/Game.js"></script>
+  <script src="./js/Form.js"></script>
+  <script src="./js/Player.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-database.js"></script>
+  <!-- Firebase SDK CODE ADD BELOW -->
+  <script>
+    const firebaseConfig = {
+      authDomain: "c35-veer.firebaseapp.com",
+      databaseURL: "https://c35-veer-default-rtdb.asia-southeast1.firebasedatabase.app",
+      projectId: "c35-veer",
+      storageBucket: "c35-veer.appspot.com",
+      messagingSenderId: "95242648186",
+      appId: "1:95242648186:web:6a3d271034e364ec4ad9c3"
+    };
+
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+  </script>
+
+</head>
+
+<body>
+
+  <script src="./sketch.js"></script>
+</body>
+
+</html>
